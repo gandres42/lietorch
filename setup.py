@@ -17,7 +17,7 @@ setup(
                 os.path.join(ROOT, "eigen")],
             sources=[
                 "lietorch/src/lietorch.cpp", 
-                "lietorch/src/lietorch_gpu.cu",
+                "lietorch/src/lietorch_gpu.hip",
                 "lietorch/src/lietorch_cpu.cpp"],
             extra_compile_args={
                 "cxx": ["-O2"], 
@@ -26,11 +26,11 @@ setup(
 
         CUDAExtension("lietorch_extras", 
             sources=[
-                "lietorch/extras/altcorr_kernel.cu",
-                "lietorch/extras/corr_index_kernel.cu",
-                "lietorch/extras/se3_builder.cu",
-                "lietorch/extras/se3_inplace_builder.cu",
-                "lietorch/extras/se3_solver.cu",
+                "lietorch/extras/altcorr_kernel.hip",
+                "lietorch/extras/corr_index_kernel.hip",
+                "lietorch/extras/se3_builder.hip",
+                "lietorch/extras/se3_inplace_builder.hip",
+                "lietorch/extras/se3_solver.hip",
                 "lietorch/extras/extras.cpp",
             ],
             extra_compile_args={

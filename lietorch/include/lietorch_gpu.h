@@ -4,8 +4,7 @@
 
 #include <vector>
 #include <torch/extension.h>
-#include <cuda.h>
-#include <cuda_runtime.h>
+#include <hip/hip_runtime.h>
 
 
 // unary operations

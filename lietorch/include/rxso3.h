@@ -1,4 +1,5 @@
 
+#include "hip/hip_runtime.h"
 #ifndef RxSO3_HEADER
 #define RxSO3_HEADER
 

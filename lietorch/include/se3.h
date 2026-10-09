@@ -1,4 +1,5 @@
 
+#include "hip/hip_runtime.h"
 #ifndef SE3_HEADER
 #define SE3_HEADER
 
